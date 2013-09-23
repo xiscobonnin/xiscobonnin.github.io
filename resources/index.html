@@ -1,0 +1,32 @@
+---
+layout: default
+id: resources
+---
+<a name="#datasets"></a>
+<h3 class="title-und">Datasets</h3>
+<p class="text-justify">
+These datasets were recorded around a building at the <a href="http://www.uib.es">University of the Balearic Islands</a> and can be used to assess the quality of visual loop closure or SLAM algorithms. See <a href="/static/papers/techrepA042013_Garcia2013.pdf">this paper</a> for further details.<br>
+<ul>
+	<li><a href="https://www.dropbox.com/s/poiarwuz8ux1qkf/UIB_small_loop.zip">UIB Small Loop</a> (53.82 MB)</li>
+	<li><a href="https://www.dropbox.com/s/4p8o8ct90h10bmm/UIB_large_loop.zip">UIB Large Loop</a> (139.7 MB)</li>
+	<li><a href="https://www.dropbox.com/s/epk3vcbz14ed3rm/UIB_indoor.zip">UIB Indoor Loop</a> (42.06 MB)</li>
+</ul>
+</p>
+<p class="text-justify">
+Each file contains:
+<ul>
+	<li>A directory called <em>images</em>. This directory includes an ordered sequence of images in PNG format. The size of the images is 300x240 and they were acquired at 1Hz.</li><br>
+	<li>A ground truth file in Matlab format, <em>groundtruth.mat</em>. This file includes a binary matrix where entry (<em>i</em>, <em>j</em>) is 1 if image <em>i</em> and image <em>j</em> can be considered as the same place, and 0 otherwise. Therefore, the <em>i</em>-th row represents the possible loop closures for image <em>i</em>. This ground truth was generated manually, and perhaps it should be modified if you want to use it as a reference.</li>
+</ul>
+</p>
+Examples:
+<br><br>
+<div class="row">
+	<div class="span5 text-center">
+		<img src="/img/UIB_outdoor.png" alt="Outdoor" />
+	</div>
+	<div class="span4 text-center">
+		<img src="/img/UIB_indoor.png" alt="Indoor" />
+	</div>
+</div>
+</div>

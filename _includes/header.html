@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Francisco Bonnin-Pascual">
+		<meta name="author" content="Francisco Bonnin-Pascual">
+		<meta name="robots" content="index, follow">
+		<meta name="page-topic" content="index, follow">
+		<meta name="keywords" content="Francisco Bonnin Pascual mapping localization SLAM visual loop closure datasets UAV UIB">
+		<title>Francisco Bonnin-Pascual</title>
+		
+		<!-- Bootstrap -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="/css/own.css" rel="stylesheet" media="screen">
+		<link href="/favicon.ico" rel="shortcut icon">
+
+		<!-- Google Analytics -->
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-43710726-1', 'xiscobonnin.github.io');
+		  ga('send', 'pageview');
+
+		</script>
+
+	</head>
+	<body style>
+		<!-- Content -->
+		<div class="container">
+			<!-- Header -->
+			<!--h3><a href="/">Francisco Bonnín Pascual</a></h3>
+			<h4>University of the Balearic Islands</h4-->
+
+
+<div class="row">
+	<div class="span6 text-left">
+		<h3><a href="/">Francisco Bonnín Pascual</a></h3>
+		<h4><a href="http://www.uib.es">University of the Balearic Islands</a></h4-->
+		<h5><a href="http://srv.uib.es">Systems Robotics and Vision Group</a></h5-->
+	</div>
+	<div class="span3 text-right">
+		<br>
+		<a href="http://www.uib.es"><img src="/img/uib.png" alt="University of the Balearic Islands" /></a>
+	</div>
+	<div class="span3 text-right">
+		<br>
+		<a href="http://srv.uib.es"><img src="/img/srv.png" alt="Systems, Robotics and Vision Group"/></a>	
+	</div>
+</div>
+
+			<div class="navbar">
+				<div class="navbar-inner">
+					<ul class="nav">
+						{% if page.id == 'home' %}
+							<li class="active"><a href="/">Home</a></li>
+						{% else %}
+							<li><a href="/">Home</a></li>
+						{% endif %}
+					
+						{% if page.id == 'research' %}
+							<li class="active"><a href="/research">Research</a></li>
+						{% else %}
+							<li><a href="/research">Research</a></li>
+						{% endif %}
+
+						{% if page.id == 'publications' or page.id == 'publications_type' %}
+							<li class="active"><a href="/publications">Publications</a></li>
+						{% else %}
+							<li><a href="/publications">Publications</a></li>
+						{% endif %}
+					
+						{% if page.id == 'projects' %}
+							<li class="active"><a href="/projects">Projects</a></li>
+						{% else %}
+							<li><a href="/projects">Projects</a></li>
+						{% endif %}
+
+						{% comment %}					
+						{% if page.id == 'teaching' %}
+							<li class="active"><a href="/teaching">Teaching</a></li>
+						{% else %}
+							<li><a href="/teaching">Teaching</a></li>
+						{% endif %}
+						{% endcomment %}
+					
+						{% if page.id == 'resources' %}
+							<li class="active"><a href="/resources">Resources</a></li>
+						{% else %}
+							<li><a href="/resources">Resources</a></li>
+						{% endif %}
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span3">
+				<!-- Insert here fixed menus -->
+				{% include panel_contact.html %}
+				
+				{% if page.id == 'home' %}
+					{% include panel_globalmenu.html %}
+				{% endif %}
+				
+				{% if page.id == 'research' %}
+					{% include panel_research.html %}
+				{% endif %}
+				
+				{% if page.id == 'projects' %}
+					{% include panel_projects.html %}
+				{% endif %}
+				
+				{% if page.id == 'publications' %}
+					{% include panel_pub_year.html %}
+				{% endif %}
+				
+				{% if page.id == 'publications_type' %}
+					{% include panel_pub_type.html %}
+				{% endif %}
+				
+				{% if page.id == 'resources' %}
+					{% include panel_resources.html %}
+				{% endif %}
+
+				</div>
+				<div class="span9">
