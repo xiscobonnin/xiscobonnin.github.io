@@ -7,3 +7,23 @@
 {
 	text-align: justify;
 }
+
+.back-gray
+{
+	background-color: #EEEEEE;
+}
+
+.padded
+{
+	padding:10px
+}
+
+.color-dgray
+{
+	color: #707070;
+}
+
+.color-dred
+{
+	color: #780000;
+}
