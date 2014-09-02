@@ -17,9 +17,14 @@
 		<link href="/css/own.css" rel="stylesheet" media="screen">
 		<link href="/favicon.ico" rel="shortcut icon">
 
-		<style type="text/css">
+		<!--style type="text/css">
 			a {color:#780000;}
+		</style-->
+
+		<style type="text/css">
+			a {color:#006ab7;}
 		</style>
+
 
 		<!-- Google Analytics -->
 
@@ -85,14 +90,12 @@
 						{% else %}
 							<li><a href="/projects">Projects</a></li>
 						{% endif %}
-
-						{% comment %}					
+					
 						{% if page.id == 'teaching' %}
 							<li class="active"><a href="/teaching">Teaching</a></li>
 						{% else %}
 							<li><a href="/teaching">Teaching</a></li>
 						{% endif %}
-						{% endcomment %}
 						
 						{% if page.id == 'resources' %}
 							<li class="active"><a href="/resources">Resources</a></li>
@@ -127,6 +130,10 @@
 					{% include panel_pub_type.html %}
 				{% endif %}
 				
+				{% if page.id == 'teaching' %}
+					{% include panel_teaching.html %}
+				{% endif %}
+
 				{% if page.id == 'resources' %}
 					{% include panel_resources.html %}
 				{% endif %}
